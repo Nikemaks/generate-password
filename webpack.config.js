@@ -55,19 +55,6 @@ const plugins = () => {
             }
         }),
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, 'images.json'),
-                    to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/'),
-                    to: path.resolve(__dirname, 'dist/assets/')
-                },
-
-            ]
-        }),
         new MiniCssExtractPlugin({
             filename: filename('css')
         })
