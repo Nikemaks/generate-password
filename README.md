@@ -9,7 +9,7 @@
 ## Build 
 * `$ npm i`
 * `$  npm run build`
-*  `Open in browser` [https://chrome://extensions/](chrome://extensions/) `and click "Load unpacked"`
+*  `Open in browser` [chrome://extensions/](https://chrome://extensions/) `and click "Load unpacked"`
 *  `Choose folder dist`
 
 ## Scripts
