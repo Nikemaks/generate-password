@@ -1,10 +1,16 @@
-# Start template for webpack project
+# generate-password exstension for google chrome.
 ## Installation
-* `$ git clone https://github.com/Nikemaks/webpack_tmpl.git`
-* `$ cd webpack_tmpl`
+* `$ git clone https://github.com/Nikemaks/generate-password.git`
+* `$ cd generate-password`
 * `$ npm i`
 * `$ npm run start`
 * `Open in browser` [https://localhost:4200/](https://localhost:4200/)
+
+## Build 
+* `$ npm i`
+* `$  npm run build`
+*  `Open in browser [chrome://extensions/](chrome://extensions/) and click "Load unpacked"`
+*  `Choose folder dist`
 
 ## Scripts
 
