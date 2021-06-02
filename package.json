@@ -17,9 +17,9 @@
   ],
   "author": "Maxim Maliy",
   "bugs": {
-    "url": "https://github.com/Nikemaks/infinite_scrolling/issues"
+    "url": "https://github.com/Nikemaks/generate-password/issues"
   },
-  "homepage": "https://github.com/Nikemaks/infinite_scrolling#readme",
+  "homepage": "https://github.com/Nikemaks/generate-password",
   "dependencies": {
     "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",

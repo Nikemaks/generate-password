@@ -55,6 +55,11 @@ const plugins = () => {
             }
         }),
         new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './manifest.json', to: 'dist'}
+            ]
+        }),
         new MiniCssExtractPlugin({
             filename: filename('css')
         })
