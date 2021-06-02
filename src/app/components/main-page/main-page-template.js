@@ -8,8 +8,7 @@ export const mainPageTemplate = (model) => `
                         <li>
                             <span>Password length:</span>
                             <input 
-                                maxlength="30" 
-                                minlength="3" 
+                                max="25" 
                                 value="3" 
                                 class="password-length" 
                                 value="${model.lengthPassword}"

@@ -12,7 +12,7 @@ const isProd = !isDev;
 const optimization = () => {
     const config = {
         splitChunks: {
-            chunks: "all"
+            chunks: 'all'
         }
     };
 
@@ -57,7 +57,14 @@ const plugins = () => {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns: [
-                { from: './manifest.json', to: 'dist'}
+                {
+                    from: path.resolve(__dirname, './src/manifest.json'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, './src/img/reset-password.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
             ]
         }),
         new MiniCssExtractPlugin({
@@ -68,9 +75,9 @@ const plugins = () => {
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    mode: "development",
+    mode: 'development',
     entry: {
-        main: ['@babel/polyfill', "./app.js"],
+        main: ['@babel/polyfill', './app.js'],
     },
     output: {
         filename: filename('js'),
